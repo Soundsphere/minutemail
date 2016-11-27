@@ -95,9 +95,9 @@ case $1 in
           case $edit in
             e)  nano $MM/MinuteMail
                 printf "\n\n"
-                read -p "Send now? " send
+                read -p "Send now (s)? " send
                 case $send in
-                  y)  sendmm
+                  s)  sendmm
                       exit
                   ;;
                   *)  echo "not sent"
