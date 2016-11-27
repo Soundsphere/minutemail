@@ -26,7 +26,7 @@ NOW=$(date +%A,\ %d.\ %B\ %Y)
 
 # combine all files to one
 function catall() {
-  cat $MM/Header $MM/Worked $MM/Roadblocks $MM/Observations $MM/Thoughts $MM/Feelings $MM/Footer > $MM/MinuteMail
+  cat $MM/{Header,Worked,Roadblocks,Observations,Thoughts,Feelings,Footer} > $MM/MinuteMail
 }
 
 # reset all the files after send
@@ -86,7 +86,8 @@ case $1 in
             *) echo "not sent"
           esac
   ;;
-  send)   sendmm
+  send)   catall
+          sendmm
   ;;
   # this section is called from the reminder script
   # it opens an xterm and closes it right after the interaction
