@@ -2,8 +2,7 @@
 #
 # MinuteMail script created by Benedikt Rumpf, System Administrator at
 # Caroobi GmbH
-# This script sends out a MinuteMail to 1mm@caroobi.com, product@caroobi.com
-# and noida.tech@caroobi.com
+# This script sends out a MinuteMail our managers and teammates.
 # It will be constantly updated and improved. Should you be able to script
 # in bash and come across this file, please feel free improve and or otherwise
 # use this script.
