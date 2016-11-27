@@ -1,0 +1,7 @@
+Welcome to mm, the MinuteMailer for benedikt.rumpf@caroobi.com
+
+The MinuteMail consists of Worked on, Roadblocks, Observations, Thoughts and Feelings.
+To set either one of them, use mm w for Worked on, or mm o for Observations.
+
+Once finished, enter mm done to prepare the file. You can then show the file
+with mm show. Then the file can be send to or edited and then send. 
