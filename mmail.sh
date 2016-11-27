@@ -18,9 +18,9 @@
 MM="$HOME/bin/mm"
 
 # recipients of the email
-#DEST="1mm@caroobi.com,product@caroobi.com,noida.tech@caroobi.com"
+#DEST="emailhere"
 # uncomment for debugging:
-DEST="benedikt.rumpf@gmail.com"
+DEST="emailhere"
 
 # todays date. Format: Weekday, DD Month YYYY
 NOW=$(date +%A,\ %d.\ %B\ %Y)
