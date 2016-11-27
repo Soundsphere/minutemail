@@ -120,7 +120,7 @@ case $1 in
   reset)  reset
   ;;
   test)   catall
-          cat $MM/MinuteMail | mail -s "MinuteMail Benedikt - $NOW" benedikt.rumpf@caroobi.com
+          cat $MM/MinuteMail | mail -s "MinuteMail Benedikt - $NOW" $DEST
           touch $MM/sent
           echo "mail sent, but not reset"
   ;;
