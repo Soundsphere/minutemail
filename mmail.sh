@@ -8,7 +8,7 @@
 # use this script.
 # Before using this program, have a look at
 # https://wiki.archlinux.org/index.php/SSMTP in order to install the mailer
-#
+# have a look at getopt for base case handling.
 
 # Path to files
 MM="$HOME/bin/mm"
@@ -16,7 +16,7 @@ MM="$HOME/bin/mm"
 # recipients of the email
 #DEST="emailhere"
 # uncomment for debugging:
-DEST="emailhere"
+DEST="benedikt.rumpf@gmail.com"
 
 # todays date. Format: Weekday, DD Month YYYY
 NOW=$(date +%A,\ %d.\ %B\ %Y)
@@ -71,9 +71,9 @@ case $1 in
           case $edit in
             e)  nano $MM/MinuteMail
                 printf "\n\n"
-                read -p "Send now? " send
+                read -p "Send now (s)? " send
                 case $send in
-                  y) sendmm
+                  s) sendmm
                   ;;
                   *)  echo "not sent"
                 esac
