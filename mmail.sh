@@ -9,9 +9,6 @@
 # Before using this program, have a look at
 # https://wiki.archlinux.org/index.php/SSMTP in order to install the mailer
 #
-###############################################################################
-# Bug seems to be fixed, keep an eye on how it performs in the wild
-###############################################################################
 
 # Path to files
 MM="$HOME/bin/mm"
