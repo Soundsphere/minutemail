@@ -16,7 +16,7 @@ MM="$HOME/bin/mm"
 # recipients of the email
 #DEST="emailhere"
 # uncomment for debugging:
-DEST="emailhere"
+DEST=$(<mm.conf)
 
 # todays date. Format: Weekday, DD Month YYYY
 NOW=$(date +%A,\ %d.\ %B\ %Y)
@@ -61,10 +61,10 @@ case $1 in
   ;;
   f)      printf "\n - $2" >> $MM/Feelings
   ;;
-  c)  catall
+  c)      catall
           cat $MM/MinuteMail
   ;;
-  d)   catall
+  d)      catall
           cat $MM/MinuteMail
           printf "\n\n"
           read -p "Edit (e) or send (s) MinuteMail? " edit
@@ -83,7 +83,7 @@ case $1 in
             *) echo "not sent"
           esac
   ;;
-  s)   catall
+  s)      catall
           sendmm
   ;;
   # this section is called from the reminder script
