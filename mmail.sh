@@ -61,10 +61,10 @@ case $1 in
   ;;
   f)      printf "\n - $2" >> $MM/Feelings
   ;;
-  check)  catall
+  c)  catall
           cat $MM/MinuteMail
   ;;
-  done)   catall
+  d)   catall
           cat $MM/MinuteMail
           printf "\n\n"
           read -p "Edit (e) or send (s) MinuteMail? " edit
@@ -83,7 +83,7 @@ case $1 in
             *) echo "not sent"
           esac
   ;;
-  send)   catall
+  s)   catall
           sendmm
   ;;
   # this section is called from the reminder script
