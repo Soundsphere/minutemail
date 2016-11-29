@@ -1,28 +1,22 @@
 Welcome to mm, the MinuteMailer for benedikt.rumpf@caroobi.com
 
-The MinuteMail consists of Worked on, Roadblocks, Observations, Thoughts and Feelings.
-To set either one of them, use mm w for Worked on, or mm o for Observations.
-
-Once finished, enter mm done to prepare the file. You can then show the file
-with mm show. Then the file can be send or edited and then send.
-
 Options are:
 
-w:        Add worked on
+w:        Add  topics you worked on
 
-r:        Any Roadblocks you might encounter
+r:        Add Roadblocks you might encounter
 
-o:        Observations during the day
+o:        Add Observations during the day
 
 t:        Add your Thoughts
 
 f:        Add your Feelings
 
-check:    have a look at the MinuteMail so far
+c:        check the current status of the MinuteMail
 
-done:     Opens your MinuteMail. You can now either edit or send the mail
+d:        Opens your MinuteMail. You can now either edit or send the mail
 
-send:     Sends your MinuteMail directly without editing or displaying
+s:        Sends your MinuteMail directly without editing or displaying
 
 remind:   Opens another terminal and closes it right after the interation.
           Similar to done.
