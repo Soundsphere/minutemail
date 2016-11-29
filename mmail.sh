@@ -16,7 +16,7 @@ MM="$HOME/bin/mm"
 # recipients of the email
 #DEST="emailhere"
 # uncomment for debugging:
-DEST="email here"
+DEST="emailhere"
 
 # todays date. Format: Weekday, DD Month YYYY
 NOW=$(date +%A,\ %d.\ %B\ %Y)
@@ -110,9 +110,6 @@ case $1 in
           esac
   ;;
   help)   cat $MM/Helpfile
-  ;;
-  status) catall
-          cat $MM/MinuteMail
   ;;
   reset)  reset
   ;;
