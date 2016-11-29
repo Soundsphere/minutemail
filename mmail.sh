@@ -71,7 +71,7 @@ case $1 in
           case $edit in
             e)  nano $MM/MinuteMail
                 printf "\n\n"
-                read -p "Send now (s)? " send
+                read -p "Send now (s)?" send
                 case $send in
                   s) sendmm
                   ;;
