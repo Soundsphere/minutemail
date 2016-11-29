@@ -8,15 +8,17 @@
 # use this script.
 # Before using this program, have a look at
 # https://wiki.archlinux.org/index.php/SSMTP in order to install the mailer
-# have a look at getopt for base case handling.
+# have a look at getopt for better case handling.
 
 # Path to files
 MM="$HOME/bin/mm"
 
 # recipients of the email
-#DEST="emailhere"
-# uncomment for debugging:
+# add the email address into the mm.config file. Separate them with commas if
+# you add more than one address
 DEST=$(<mm.conf)
+# uncomment for debugging:
+#DEST=$(<mm.conf)
 
 # todays date. Format: Weekday, DD Month YYYY
 NOW=$(date +%A,\ %d.\ %B\ %Y)
