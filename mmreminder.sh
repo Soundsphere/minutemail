@@ -16,7 +16,7 @@ fi
 if [ ! -f "/home/bene/bin/mm/sent" ]; then
   /usr/bin/notify-send -t 1000 -i /usr/share/icons/Vibrancy-Colors/apps/256/email.png MinuteMail "Time to send your MinuteMail"
   sleep 1
-  xterm -geometry 100x55 -e /home/bene/bin/./mmail.sh remind
+  xterm -geometry 100x55 -e /home/bene/bin/MinuteMail/./mmail.sh remind
 else
-  rm /home/bene/bin/mm/sent
+  rm /home/bene/bin/MinuteMail/mm/sent
 fi
