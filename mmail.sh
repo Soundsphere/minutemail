@@ -24,12 +24,12 @@ function catall() {
 
 # reset all the files after send
 function reset() {
-  printf "\nWorked on:" > "$mm_dir/Worked"
-  printf "\n\nFeelings:" > "$mm_dir/Feelings"
-  printf "\n\nRoadblocks:" > "$mm_dir/Roadblocks"
-  printf "\n\nObservations:" > "$mm_dir/Observations"
-  printf "\n\nThoughts:" > "$mm_dir/Thoughts"
   if [ -f "$mm_dir/MinuteMail" ]; then
+    printf "\nWorked on:" > "$mm_dir/Worked"
+    printf "\n\nFeelings:" > "$mm_dir/Feelings"
+    printf "\n\nRoadblocks:" > "$mm_dir/Roadblocks"
+    printf "\n\nObservations:" > "$mm_dir/Observations"
+    printf "\n\nThoughts:" > "$mm_dir/Thoughts"
     rm "$mm_dir/MinuteMail"
     echo "mm reset"
   else
@@ -41,8 +41,9 @@ function reset() {
 # the file "sent" gets created for the cronjob. If the file does not exist,
 # run the cron to notify me of the MinuteMail that I have to send
 function sendmm() {
-  mail -s "MinuteMail Benedikt - $NOW" $mm_dir_recipients < "$mm_dir/MinuteMail"
+  mail -s "MinuteMail Benedikt - $NOW" $mm_recipients < "$mm_dir/MinuteMail"
   echo "mail sent"
+  cp "$mm_dir/MinuteMail" "$mm_dir/history/MinuteMail $NOW"
   reset
   touch "$mm_dir/sent"
 }
