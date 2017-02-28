@@ -12,6 +12,10 @@ if [ -r "$HOME/.dbus/Xdbus" ]; then
   . "$HOME/.dbus/Xdbus"
 fi
 
+# Here are the contents of the file:
+# DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+# export DBUS_SESSION_BUS_ADDRESS
+
 # run the actual thing
 if [ ! -f "/home/bene/bin/mm/sent" ]; then
   /usr/bin/notify-send -t 1000 -i /usr/share/icons/Vibrancy-Colors/apps/256/email.png MinuteMail "Time to send your MinuteMail"
