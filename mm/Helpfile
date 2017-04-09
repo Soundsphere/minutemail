@@ -26,4 +26,4 @@ help:     display this file
 reset:    Resets the MinuteMail so that you can start from scratch.
           It is reset automatically afer each send
 
-test:     Sends a testmail to the address specified
+test:     Sends a testmail to the address specified in mm.conf
