@@ -1,7 +1,5 @@
 #!/bin/bash
 #
-# MinuteMail script created by Benedikt Rumpf, System Administrator at
-# Caroobi GmbH
 # This script sends out a MinuteMail to our managers.
 # It will be constantly updated and improved. Should you be able to script
 # in bash and come across this file, please feel free improve and or otherwise
